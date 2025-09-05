@@ -256,6 +256,7 @@
             box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
             position: relative;
             overflow: hidden;
+            animation: pulse 1.5s infinite;
         }
 
         .btn::before {
@@ -462,14 +463,9 @@
         }
 
         @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-                opacity: 1;
-            }
-            50% {
-                transform: scale(1.05);
-                opacity: 0.8;
-            }
+          0%   { transform: scale(1); }
+          50%  { transform: scale(1.08); } /* ซูมเข้า */
+          100% { transform: scale(1); }    /* กลับสู่ปกติ */
         }
 
         /* Scroll Animations */
@@ -567,19 +563,19 @@
             
             <!-- Enhanced Call-to-Action Buttons -->
             <a href="https://visaprogame.github.io/visapro/" class="btn btn-game">
-                <i class="fa-solid fa-play"></i> ຊ່ອງທາງເຂົ້າຫລີ້ນ
+                <i class="fa-solid fa-gamepad-modern"></i> ຊ່ອງທາງເຂົ້າຫລີ້ນ
             </a>
 
             <a href="https://wa.me/2026817383" class="btn btn-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                <i class="fa fa-whatsapp"></i> WhatsApp
             </a>
 
             <a href="https://www.facebook.com/profile.php?id=61577198108740" class="btn btn-facebook">
-                <i class="fab fa-facebook"></i> Facebook
+                <i class="fa fa-facebook-f"></i> Facebook
             </a>
 
             <a href="https://lin.ee/JjntxPl" class="btn btn-line">
-                <i class="fab fa-line"></i> LINE
+                <i class="fas fa-chart-line"></i> LINE
             </a>
         </div>
 
